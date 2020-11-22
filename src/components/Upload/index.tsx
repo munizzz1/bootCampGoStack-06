@@ -25,6 +25,10 @@ const Upload: React.FC<UploadProps> = ({ onUpload }: UploadProps) => {
     return <UploadMessage type="success">Solte o arquivo aqui</UploadMessage>;
   }
 
+  /**
+   * accept=".csv, application/vnd.ms-excel, text/csv"
+   */
+
   return (
     <>
       <Dropzone accept=".csv, application/vnd.ms-excel, text/csv" onDropAccepted={(files) => onUpload(files)}>
